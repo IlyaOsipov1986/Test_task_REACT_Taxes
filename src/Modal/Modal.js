@@ -10,10 +10,9 @@ const Modal = ({active, setActive}) => {
         let taxes = Number(salary * 12) * 0.13;
         setTaxesResult(taxes);
         console.log({taxes});
+        console.log({salary});
     }
-
-
-
+    
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
             <div className={active ? 'modal__content active' : 'modal__content'} onClick={e => e.stopPropagation()}>
