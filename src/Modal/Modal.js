@@ -31,8 +31,8 @@ const Modal = ({active, setActive}) => {
                     Размер налогового вычета составляет не более 13% от своего официального годового дохода.</div>
                 <div className={'modal__content-form'}>
                 <form>
-                    <label>Ваша зарплата в месяц
-                       <input placeholder={'Введите данные'} value={salary} onChange={e => setSalary(e.target.value)}></input></label>
+                    <label>Ваша зарплата в месяц</label>
+                       <input placeholder={'Введите данные'} value={salary} onChange={e => setSalary(e.target.value)}/>
                     <div className={'modal__content-form-btn'} onClick={() => calcSalary()}>Расситать</div>
                 </form>
                 </div>
